@@ -30,11 +30,12 @@ body {
 ========================= */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #d0d0d0;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 8px;
-    background: white;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 .card:hover {
@@ -190,29 +191,31 @@ button {
 
     /* Tarjetas */
     .card {
-        border: 2px solid #333 !important;
+        border: 2px solid #999 !important;
         page-break-inside: avoid;
-        box-shadow: none !important;
-        margin-bottom: 4mm;
-        padding: 3mm;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) !important;
+        margin-bottom: 5mm;
+        padding: 4mm;
         border-radius: 3px;
-        background: white !important;
+        background: #f5f5f5 !important;
     }
 
     .card-body {
         padding: 3mm !important;
-        background: white !important;
+        background: transparent !important;
     }
 
     .card-title {
         font-size: 10pt;
-        margin-bottom: 1mm;
-        color: #333;
+        margin-bottom: 2mm;
+        color: #000;
+        font-weight: bold;
     }
 
     .card-subtitle {
         font-size: 8pt;
         color: #666;
+        margin-bottom: 1mm;
     }
 
     /* Listas */
