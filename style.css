@@ -190,25 +190,29 @@ button {
 
     /* Tarjetas */
     .card {
-        border: 1px solid #ccc !important;
+        border: 2px solid #333 !important;
         page-break-inside: avoid;
         box-shadow: none !important;
-        margin-bottom: 3mm;
+        margin-bottom: 4mm;
         padding: 3mm;
-        border-radius: 2px;
+        border-radius: 3px;
+        background: white !important;
     }
 
     .card-body {
         padding: 3mm !important;
+        background: white !important;
     }
 
     .card-title {
         font-size: 10pt;
         margin-bottom: 1mm;
+        color: #333;
     }
 
     .card-subtitle {
         font-size: 8pt;
+        color: #666;
     }
 
     /* Listas */
