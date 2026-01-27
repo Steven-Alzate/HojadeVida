@@ -1,20 +1,24 @@
-function downloadPDF(){
-    const element = document.querySelector('#pdf-content');
-    //console.log(element);
-    const otp = {
-        margin: [10, 5, 15, 5], //[arriba, izquierda, abajo, derecha] en mm
-        filename: 'Hoja_de_vida_Julian_Buitrago.pdf',
-        image: { type: 'jpeg', quality: 1 },
-        html2canvas:{
-            scale: 2,
+function downloadPDF() {
+    const element = document.getElementById('pdf-content');
+
+    const opt = {
+        margin: [10, 10, 10, 10], // mm (arriba, izq, abajo, der)
+        filename: 'Hoja_de_vida_Steven_Alzate.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: {
+            scale: 3,            // 🔥 clave para buena calidad
             useCORS: true,
-            scrollY:0
+            scrollY: 0
         },
-        jsPDF:{
-            unit:'mm',
-            format:'a4',
-            orientation:'portrait' //Orientación vertical
+        jsPDF: {
+            unit: 'mm',
+            format: 'a4',
+            orientation: 'portrait'
+        },
+        pagebreak: {
+            mode: ['css', 'legacy']
         }
-    }
-    html2pdf().set(otp).from(element).save();    
+    };
+
+    html2pdf().set(opt).from(element).save();
 }
