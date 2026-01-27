@@ -6,7 +6,7 @@ function downloadPDF() {
         filename: 'Hoja_de_vida_Steven_Alzate.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: {
-            scale: 3,            // 🔥 clave para buena calidad
+            scale: 3,
             useCORS: true,
             scrollY: 0
         },
